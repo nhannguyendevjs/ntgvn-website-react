@@ -1,4 +1,4 @@
-import { VitePWAOptions } from 'vite-plugin-pwa'
+import { VitePWAOptions } from 'vite-plugin-pwa';
 
 const manifestForPlugIn: Partial<VitePWAOptions> = {
   registerType: 'prompt',
