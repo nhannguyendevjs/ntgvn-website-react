@@ -6,6 +6,7 @@ function NavigationBar() {
         <>
             <nav className="flex sm:justify-center space-x-4">
                 {[
+                    [useId(), 'Products', '/products'],
                     [useId(), 'Home', '/home'],
                     [useId(), 'About', '/about'],
                 ].map(([id, title, url]) => (

@@ -15,7 +15,7 @@ body {
   margin: 0;
 }
 
-#app-container {
+#root {
   min-height: 100vh;
   background-image: url('https://ik.imagekit.io/9mx5jcsss/smart-farming-technology.webp');
   background-position: center;
@@ -27,7 +27,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-  background: ffffff;
+  background: #ffffff;
   padding: 1rem;
   font-size: 14px;
   border-top-left-radius: var(--border-radius);

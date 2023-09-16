@@ -12,6 +12,7 @@ function App() {
             <NavigationBar />
             <div className='w-full h-4' />
             <Outlet />
+            <div id='contact-phone-number'>Contact: 0346 528 256</div>
         </>
     );
 }
