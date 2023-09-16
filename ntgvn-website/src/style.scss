@@ -1,0 +1,25 @@
+@import '../node_modules/animate.css/animate.min.css';
+
+@import '../node_modules/swiper/swiper-bundle.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/variables';
+@import './styles/mixins';
+@import './styles/common';
+
+@import './styles/scrollbar/scrollbar';
+
+@import './styles/app';
+
+@import './styles/pages/home';
+@import './styles/pages/about';
+
+@import './styles/screens/mobile';
+@import './styles/screens/extra-small';
+@import './styles/screens/small-tablet';
+@import './styles/screens/tablet-laptop';
+@import './styles/screens/desktop';
+@import './styles/screens/extra-large';
