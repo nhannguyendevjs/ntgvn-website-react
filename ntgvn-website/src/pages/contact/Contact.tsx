@@ -1,23 +1,23 @@
 import { useEffect } from 'react';
 import { activeRoute } from '../../utils/stores/app-store';
 
-function Products() {
+function Contact() {
   useEffect(() => {
-    activeRoute('/products');
-    console.log('Products Page Did Mount');
+    activeRoute('/contact');
+    console.log('Contact Page Did Mount');
   }, []);
 
   useEffect(() => {
     return () => {
-      console.log('Products Page Will UnMount');
+      console.log('Contact Page Will UnMount');
     };
   }, []);
 
   return (
     <>
-      <div>Products</div>
+      <div>Contact</div>
     </>
   );
 }
 
-export default Products;
+export default Contact;

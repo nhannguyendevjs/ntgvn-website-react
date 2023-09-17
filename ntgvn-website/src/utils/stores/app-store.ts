@@ -1,14 +1,14 @@
 import { atom } from 'nanostores';
 
 const appStore$ = atom({
-    activatedRoute: '',
+  activatedRoute: '',
 });
 
 const activeRoute = activatedRoute => {
-    appStore$.set({ ...appStore$.get(), activatedRoute });
+  appStore$.set({ ...appStore$.get(), activatedRoute });
 };
 
 export {
-    appStore$,
-    activeRoute,
+  appStore$,
+  activeRoute,
 };

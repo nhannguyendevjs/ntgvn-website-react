@@ -14,10 +14,13 @@
 
 @import './styles/app';
 
-@import './styles/pages/products';
-@import './styles/pages/home';
-@import './styles/pages/about';
+@import './styles/components/navigation-bar';
 
+@import './styles/pages/products';
+@import './styles/pages/pricing';
+@import './styles/pages/contact';
+
+@import './styles/screens/customization';
 @import './styles/screens/mobile';
 @import './styles/screens/extra-small';
 @import './styles/screens/small-tablet';

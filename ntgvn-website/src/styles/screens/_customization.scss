@@ -1,0 +1,10 @@
+@media only screen and (max-width: 768px) {
+  #root {
+    min-height: 100dvh;
+  }
+
+  .clock-date,
+  .clock-spacing {
+    display: none;
+  }
+}
