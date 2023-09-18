@@ -12,4 +12,4 @@ npm add -D sass
 
 npm i lodash luxon rxjs uuid swiper animate.css zod nanostores react-router-dom
 
-npm i -D @types/lodash @types/luxon @types/uuid tailwind-merge vite-plugin-compression2 @types/react-router-dom vite-plugin-pwa workbox-window
+npm i -D @types/lodash @types/luxon @types/uuid tailwind-merge @types/react-router-dom vite-plugin-pwa workbox-window
