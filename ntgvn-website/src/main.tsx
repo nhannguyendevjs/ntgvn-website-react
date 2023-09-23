@@ -1,48 +1,7 @@
-import { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RouterProvider } from 'react-router-dom';
 import './style.scss';
-import App from './App';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <App />
-      </Suspense>
-    </>,
-    children: [
-      {
-        path: 'products',
-        async lazy() {
-          let Products = await import('./pages/products/Products');
-          return {
-            Component: Products.default
-          };
-        },
-      },
-      {
-        path: 'pricing',
-        async lazy() {
-          let Pricing = await import('./pages/pricing/Pricing');
-          return {
-            Component: Pricing.default
-          };
-        },
-      },
-      {
-        path: 'contact',
-        async lazy() {
-          let Contact = await import('./pages/contact/Contact');
-          return {
-            Component: Contact.default
-          };
-        },
-      },
-    ],
-  },
-]);
+import router from './router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
