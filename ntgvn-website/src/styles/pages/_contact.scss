@@ -1,0 +1,21 @@
+.contact-container {
+  padding: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .contact-block {
+    span {
+      font-weight: 500;
+    }
+
+    &.__map {
+      border-radius: var(--border-radius);
+      height: calc(100vh - 56px - 8rem - 149px);
+      width: calc(100vw - 4rem);
+
+      @include loading;
+    }
+  }
+}

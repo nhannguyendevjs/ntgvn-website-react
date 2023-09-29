@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react';
-import Hello from '../../utils/components/hello/Hello';
 import { activeRoute } from '../../utils/stores/app-store';
+import { Link } from 'react-router-dom';
 
 function Pricing() {
   useEffect(() => {
@@ -17,7 +17,11 @@ function Pricing() {
 
   return (
     <>
-      <Hello color='Red' />
+      <div className="pricing-container">
+        <div className="pricing-header">Simple and flexible pricing</div>
+
+        <div>Please <Link to="/contact"><span className="text-green-500 font-semibold cursor-pointer">contact us</span></Link> for the best price</div>
+      </div >
     </>
   );
 }

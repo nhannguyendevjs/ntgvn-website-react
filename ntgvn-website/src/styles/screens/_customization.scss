@@ -7,4 +7,12 @@
   .clock-spacing {
     display: none;
   }
+
+  .contact-container {
+    .contact-block {
+      &.__map {
+        height: calc(100dvh - 56px - 8rem - 149px);
+      }
+    }
+  }
 }
