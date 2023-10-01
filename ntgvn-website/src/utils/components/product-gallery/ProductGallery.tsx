@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Swiper } from 'swiper';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 

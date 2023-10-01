@@ -1,17 +1,15 @@
 import { useState, useEffect } from 'react';
-import { timer, Subscription, Subject, takeUntil } from 'rxjs';
+import { timer, Subject, takeUntil } from 'rxjs';
 import { DateTime } from 'luxon';
 
 function Clock() {
   const destroy$ = new Subject();
 
-  let clock$: Subscription;
-
   let [date, setDate] = useState('');
   let [time, setTime] = useState('');
 
   useEffect(() => {
-    clock$ = timer(0, 1000).pipe(takeUntil(destroy$)).subscribe(() => {
+    timer(0, 1000).pipe(takeUntil(destroy$)).subscribe(() => {
       const now = DateTime.now();
       setDate(now.toFormat('yyyy LLL dd'));
       setTime(now.toFormat('hh:mm a'));
